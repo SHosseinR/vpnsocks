@@ -27,4 +27,4 @@ ssh $host 'apk add screen && screen -d -m bash run.sh'
 
 ssh -L 8000:localhost:1080  $host
 
-echo "" > /etc/apt/apt.conf.d/proxy 
+# echo "" > /etc/apt/apt.conf.d/proxy 
