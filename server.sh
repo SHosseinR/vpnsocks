@@ -2,6 +2,7 @@
 
 host=$1
 
+#  -o PubkeyAcceptedKeyTypes=ssh-rsa 
 scp ./run.sh  $host:/root
 scp ./docker-compose.yml  $host:/root
 
