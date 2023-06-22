@@ -1,6 +1,11 @@
 #!/bin/sh
 
-host=$1
+
+host=`python3 api.py`
+
+echo ${host}
+
+# host=$1
 
 #  -o PubkeyAcceptedKeyTypes=ssh-rsa 
 scp ./run.sh  $host:/root
