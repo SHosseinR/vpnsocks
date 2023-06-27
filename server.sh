@@ -10,10 +10,10 @@ do
     # host=$1
 
     #  -o PubkeyAcceptedKeyTypes=ssh-rsa 
-    scp  -tt -o PubkeyAcceptedKeyTypes=ssh-rsa ./run.sh  $host:"/root"
-    scp  -tt -o PubkeyAcceptedKeyTypes=ssh-rsa ./docker-compose.yml  $host:"/root"
+    scp   -o PubkeyAcceptedKeyTypes=ssh-rsa ./run.sh  $host:/root
+    scp   -o PubkeyAcceptedKeyTypes=ssh-rsa ./docker-compose.yml  $host:/root
 
-    ssh  -tt -o PubkeyAcceptedKeyTypes=ssh-rsa $host 'apk add screen && screen -d -m bash run.sh' 
+    ssh   -o PubkeyAcceptedKeyTypes=ssh-rsa $host 'apk add screen && screen -d -m bash run.sh' 
 
     # # ubuntu setting
     # PROXY_STRING="socks://localhost:1080/"
@@ -33,7 +33,7 @@ do
     # ###
 
 
-    ssh -tt -o PubkeyAcceptedKeyTypes=ssh-rsa -o GatewayPorts=true  -L 8000:localhost:1080  $host
+    ssh  -o PubkeyAcceptedKeyTypes=ssh-rsa -o GatewayPorts=true  -L 8000:localhost:1080  $host
 
     # echo "" > /etc/apt/apt.conf.d/proxy 
 done
