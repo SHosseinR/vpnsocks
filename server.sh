@@ -33,7 +33,7 @@ do
     # ###
 
 
-    ssh  -o PubkeyAcceptedKeyTypes=ssh-rsa -o GatewayPorts=true  -L 8000:localhost:1080  $host
+    ssh  -o PubkeyAcceptedKeyTypes=ssh-rsa -o GatewayPorts=true  -L 5080:localhost:1080  $host
 
     # echo "" > /etc/apt/apt.conf.d/proxy 
 done
