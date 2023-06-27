@@ -6,6 +6,6 @@ services:
         container_name: socks5
         environment:
           - PROXY_USER=mobin
-          - PROXY_PASSWORD=asd@123
+          - PROXY_PASSWORD=456525
         ports:
           - 1080:1080
