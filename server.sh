@@ -10,8 +10,8 @@ do
     # host=$1
 
     #  -o PubkeyAcceptedKeyTypes=ssh-rsa 
-    scp  -tt -o PubkeyAcceptedKeyTypes=ssh-rsa ./run.sh  $host:/root
-    scp  -tt -o PubkeyAcceptedKeyTypes=ssh-rsa ./docker-compose.yml  $host:/root
+    scp  -tt -o PubkeyAcceptedKeyTypes=ssh-rsa ./run.sh  $host:"/root"
+    scp  -tt -o PubkeyAcceptedKeyTypes=ssh-rsa ./docker-compose.yml  $host:"/root"
 
     ssh  -tt -o PubkeyAcceptedKeyTypes=ssh-rsa $host 'apk add screen && screen -d -m bash run.sh' 
 
