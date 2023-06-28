@@ -2,6 +2,7 @@
 
 host=$1
 type=$2
+httppass=$3
 echo $type
 echo ${host}
 
@@ -20,6 +21,10 @@ do
         scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./docker-compose.yml  $host:/root/docker-compose.yml
     else
         scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./docker-compose-squid.yml  $host:/root/docker-compose.yml
+        if [ "$httppass" == "false"]
+        then
+            scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./squid-open.conf  $host:/root/squid.conf
+        fi
     fi
 
     ssh   -o PubkeyAcceptedKeyTypes=ssh-rsa $host 'apk add screen && screen -d -m bash run.sh' 
@@ -50,5 +55,5 @@ do
     then
         break
     fi
-    
+
 done
