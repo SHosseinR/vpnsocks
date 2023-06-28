@@ -1,15 +1,23 @@
 #!/bin/sh
 
+host=$1
+type=$2
 
-host=`python3 api.py`
+echo $type
+# host=`python3 api.py`
 
 echo ${host}
 
-# host=$1
 
 #  -o PubkeyAcceptedKeyTypes=ssh-rsa 
-scp ./run.sh  $host:/root
-scp ./docker-compose.yml  $host:/root
+scp ./run.sh ./passwords ./squid.conf  $host:/root
+
+if [ "$type" == "socks" ]
+then
+    scp ./docker-compose.yml  $host:/root/docker-compose.yml
+else
+    scp ./docker-compose-squid.yml  $host:/root/docker-compose.yml
+fi
 
 ssh $host 'apk add screen && screen -d -m bash run.sh' 
 
