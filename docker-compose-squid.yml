@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  squid:
+    image: ubuntu/squid
+    container_name: squid
+    ports:
+      - 1080:3128
+    volumes:
+      # - /path/to/logs:/var/log/squid
+      - ./squid.conf:/etc/squid/squid.conf
+      - ./passwords:/etc/squid/passwords
