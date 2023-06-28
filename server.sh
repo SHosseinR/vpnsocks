@@ -21,7 +21,7 @@ do
         scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./docker-compose.yml  $host:/root/docker-compose.yml
     else
         scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./docker-compose-squid.yml  $host:/root/docker-compose.yml
-        if [ "$httppass" == "false"]
+        if [ "$httppass" == "no-pass" ]
         then
             scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./squid-open.conf  $host:/root/squid.conf
         fi
