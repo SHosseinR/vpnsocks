@@ -18,12 +18,18 @@ do
 
     if [ "$type" == "socks" ]
     then
-        scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./docker-compose.yml  $host:/root/docker-compose.yml
+        if [ "$httppass" == "no-pass" ]
+        then
+            scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./docker-compose-no-pass.yml  $host:/root/docker-compose.yml
+        else
+            scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./docker-compose.yml  $host:/root/docker-compose.yml
+        fi
     else
-        scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./docker-compose-squid.yml  $host:/root/docker-compose.yml
         if [ "$httppass" == "no-pass" ]
         then
             scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./squid-open.conf  $host:/root/squid.conf
+        else
+            scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./docker-compose-squid.yml  $host:/root/docker-compose.yml
         fi
     fi
 
