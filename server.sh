@@ -67,4 +67,6 @@ do
     fi
     
     echo "timeout. reconnecting ..."
+    sleep 2
+
 done
