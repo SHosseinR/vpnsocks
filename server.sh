@@ -56,7 +56,7 @@ do
     # ###
 
 
-    timeout 3h ssh  -o PubkeyAcceptedKeyTypes=ssh-rsa -o GatewayPorts=true  -L $port:localhost:1080  $host
+    timeout --foreground  3h ssh  -o PubkeyAcceptedKeyTypes=ssh-rsa -o GatewayPorts=true  -L $port:localhost:1080  $host
 
     # echo "" > /etc/apt/apt.conf.d/proxy 
 
