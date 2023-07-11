@@ -3,15 +3,18 @@
 host=$1
 type=$2
 httppass=$3
+port=$4
 echo $type
 echo ${host}
+echo $port
 
-
+loop="false"
 while true
 do
     if [ "$host" == "api-based" ]
     then
         host=`python3 api.py`
+        loop="true"
     fi
 
     scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./run.sh ./passwords ./squid.conf  $host:/root
@@ -53,13 +56,15 @@ do
     # ###
 
 
-    ssh  -o PubkeyAcceptedKeyTypes=ssh-rsa -o GatewayPorts=true  -L 5080:localhost:1080  $host
+    ssh  -o PubkeyAcceptedKeyTypes=ssh-rsa -o GatewayPorts=true  -L $port:localhost:1080  $host
 
     # echo "" > /etc/apt/apt.conf.d/proxy 
 
-    if [ "$host" != "api-based" ]
+    if [ "$loop" != true ]
     then
+        echo "breaking from the loop."
         break
     fi
-
+    
+    echo "timeout. reconnecting ..."
 done
