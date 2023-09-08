@@ -1,16 +1,16 @@
 import requests
 
 cookies = {
-    '_biz_uid': '00f684b3014c45a2ba7462e742f5188d',
-    'ajs_anonymous_id': '31e66fe3-e48e-4d17-92b3-92af57c5076c',
+    '_biz_uid': 'dd0c124957654a52c0e6263f063f2edb',
+    'ajs_anonymous_id': '7f88c857-6dae-4b0f-a7a8-66651b8f9cb6',
     '_biz_flagsA': '%7B%22Version%22%3A1%2C%22ViewThrough%22%3A%221%22%2C%22XDomain%22%3A%221%22%7D',
     'ajs_user_id': '284c4dbf-25ba-4bde-a082-d4fec241c581',
-    '_ga': 'GA1.2.895004180.1686572926',
-    '_gid': 'GA1.2.2050855156.1690090592',
-    'id': 'MTY5MDE3Nzk5NnxvMXhGcFBnT01DY21KLVh6UjMzNGNDQUJpY0J5ZHNfY0ZTMGR2RzZxTGFuUkxqTUlTU0YyZWJzYlRsd0diRmtjZEEzRHZiemdtX3d3VlhTWXUxZDQybkpTTUx0R3lhQzBrZGUybkVnSlY0cmxpaGNCSF9pVV9XbEdVczFSdVgxSHY3Rk5pUHNhRV91anFvczZLV29PV0Zld1ppcl9aa1BrWWJSZGdJYWNORlpnSG9NVy05bllEeW8wRGU1bVlZbHlDaHM3a3N6dFlyOUpjMUxzSy1Sa2pEV1hodTMxZmVCbU16OXFIY0Qzb0Y5dWxrQ2xFaFBuTVZ6cTZuOC1DQ09UbXJmR2tuS0haeXc5VkpLZXyajoz8AilVOMFmhoVg-i9FgGWkZNE-fcu6h9BbXYJrHw==',
-    '_biz_sid': '7614d6',
-    '_ga_5219ZE0FPY': 'GS1.2.1690205153.24.0.1690205153.0.0.0',
-    '_biz_nA': '119',
+    '_ga': 'GA1.2.310246074.1694176221',
+    '_gid': 'GA1.2.316942775.1694176221',
+    'id': 'MTY5NDE3NjIwNnxZMjdXWkd5aE9TdzZnWWRQOHlKTHItTzFtR29sV3FMZDIzU0dDZkYyOGFCenRNcThGWk1GNWRpb3g0UnpMTjZqU0NWbjhhdXhESHFITzNicS1kcFVUVTRmc1dYT2poYXI1ZGVhY18wWjZvLVg5ZWRtMEhpVldJbVctcGdvWTViaGZXUWR1akpSMjFLN2o0ZHNEMGlidUJ4Ukg4aVNrYmdZa0xUQVpOSkdjTVBVY3NkWGhxamw5dHNMVi1VS0NFaDlOV1BlakxYbEtvTlZkaVhUTlQ0Yk8xeGNlVVJYTW5waDRFdDY0TmFrTzdpTTd6WE5EbnpVVy1jelI0anhVLTR3bTlKVk5NaGtuSlYxdEw2MHzaL9iOyzjQM2nO4XTo6pik3SiaSokNI_YF9Vpqr_iarA==',
+    '_biz_sid': '4345f3',
+    '_ga_5219ZE0FPY': 'GS1.2.1694176227.1.0.1694176227.0.0.0',
+    '_biz_nA': '9',
     '_biz_pendingA': '%5B%5D',
 }
 
