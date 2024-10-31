@@ -2,33 +2,32 @@ import requests
 
 cookies = {
     '_biz_uid': 'dd0c124957654a52c0e6263f063f2edb',
-    '_mkto_trk': 'id:929-FJL-178&token:_mch-play-with-docker.com-1694168407497-86517',
     'ajs_anonymous_id': '7f88c857-6dae-4b0f-a7a8-66651b8f9cb6',
     'ajs_user_id': '284c4dbf-25ba-4bde-a082-d4fec241c581',
     '_biz_nA': '87',
     '_ga_5219ZE0FPY': 'GS1.2.1702491049.19.0.1702491049.0.0.0',
     '_biz_pendingA': '%5B%5D',
+    'id': 'MTczMDM3NDk0N3xtQTdpUWl2NGFZWmZqbkVrZWlUOU5UMHYwTXdmWjAyOVBBYmF3U2tKaE41RmpDaHhkU0JyNkxVZUt3MU5pbGUtcURVMXJFdlNEMmlKcWRKSlcxYzdJSEhrZ1YzTTdWeEw3MFdhdE8xWGx4cUxWTjhBajdQNU1LSkV0SXFmYURCdk1DUGhOdkIwVk5henBCNzRtZU1heXJMNWxraURmSEE0S1V1UzBBd2Z6OUFqXzAxdGlzbzl4MHhlcVI5WjZoSjRPZmVzZVdXUVpzOUJyTzRsWWd5SDVOX2tEWjc2UmZRbFcwa2VQSFpwUzktYzZqRFZ0bXlzbmtmbWRmYXNnanByaHhaVlZjZUJEc3ZXZ3hGTXxev75eA4yUshRXqobFdTvayIWCKC5ph_oWecFWdSbdpQ==',
+    '_gid': 'GA1.2.1225736999.1730374960',
+    '_gat_gtag_UA_89019737_3': '1',
+    '_ga_LMD5MFLF7Q': 'GS1.1.1730374960.32.1.1730375387.0.0.0',
     '_ga': 'GA1.1.310246074.1694176221',
-    '_ga_LMD5MFLF7Q': 'GS1.1.1723111065.30.1.1723111218.0.0.0',
-    'id': 'MTcyNjEyODMwMnxxU0o1bURNNjlMMWpEZGRPOVhkT3dRUURfUTA2ZEZ1QUxBcmplemJoaXQ3eHp4cWtQWlVmN2s5eUZnTFM1dm4tclN5dFVvQUg3eXk4bUxSa2F5OEtOQktNbldETWZiTkNpTzVxLVRiZ3FnREE2aW1tT1ZDY2VkVEJjdExTU0NZSnpSeHZmeXc5eV85UG9Qb3JIay1QYnUwc2o1YlE0N0lpc1A3V0VwcUpBbjZoZTVQOGktcXJHRUFOTlRLRTlrVllndDZ1Ymp1TVR4NzBsR0k3WVdEcDVuMHNWUlBNZ0IwMnp5YXdjLVFFeDRFX3d6V0V1UjQ3WWVKMWJrdTV5Slg2d09DZGJtRE8wVlBMR0FVbXwbf5p125iEukkdmwaAMKj9MB0tLimHrY7mEGsL67JWXA==',
 }
 
 headers = {
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept': 'application/json, text/plain, */*',
     'accept-language': 'en-US,en;q=0.9,fa-IR;q=0.8,fa;q=0.7',
-    'cache-control': 'max-age=0',
-    # 'cookie': '_biz_uid=dd0c124957654a52c0e6263f063f2edb; _mkto_trk=id:929-FJL-178&token:_mch-play-with-docker.com-1694168407497-86517; ajs_anonymous_id=7f88c857-6dae-4b0f-a7a8-66651b8f9cb6; ajs_user_id=284c4dbf-25ba-4bde-a082-d4fec241c581; _biz_nA=87; _ga_5219ZE0FPY=GS1.2.1702491049.19.0.1702491049.0.0.0; _biz_pendingA=%5B%5D; _ga=GA1.1.310246074.1694176221; _ga_LMD5MFLF7Q=GS1.1.1723111065.30.1.1723111218.0.0.0; id=MTcyNjEyODMwMnxxU0o1bURNNjlMMWpEZGRPOVhkT3dRUURfUTA2ZEZ1QUxBcmplemJoaXQ3eHp4cWtQWlVmN2s5eUZnTFM1dm4tclN5dFVvQUg3eXk4bUxSa2F5OEtOQktNbldETWZiTkNpTzVxLVRiZ3FnREE2aW1tT1ZDY2VkVEJjdExTU0NZSnpSeHZmeXc5eV85UG9Qb3JIay1QYnUwc2o1YlE0N0lpc1A3V0VwcUpBbjZoZTVQOGktcXJHRUFOTlRLRTlrVllndDZ1Ymp1TVR4NzBsR0k3WVdEcDVuMHNWUlBNZ0IwMnp5YXdjLVFFeDRFX3d6V0V1UjQ3WWVKMWJrdTV5Slg2d09DZGJtRE8wVlBMR0FVbXwbf5p125iEukkdmwaAMKj9MB0tLimHrY7mEGsL67JWXA==',
-    'priority': 'u=0, i',
-    'referer': 'https://labs.play-with-docker.com/',
-    'sec-ch-ua': '"Chromium";v="128", "Not;A=Brand";v="24", "Google Chrome";v="128"',
+    # 'cookie': '_biz_uid=dd0c124957654a52c0e6263f063f2edb; ajs_anonymous_id=7f88c857-6dae-4b0f-a7a8-66651b8f9cb6; ajs_user_id=284c4dbf-25ba-4bde-a082-d4fec241c581; _biz_nA=87; _ga_5219ZE0FPY=GS1.2.1702491049.19.0.1702491049.0.0.0; _biz_pendingA=%5B%5D; id=MTczMDM3NDk0N3xtQTdpUWl2NGFZWmZqbkVrZWlUOU5UMHYwTXdmWjAyOVBBYmF3U2tKaE41RmpDaHhkU0JyNkxVZUt3MU5pbGUtcURVMXJFdlNEMmlKcWRKSlcxYzdJSEhrZ1YzTTdWeEw3MFdhdE8xWGx4cUxWTjhBajdQNU1LSkV0SXFmYURCdk1DUGhOdkIwVk5henBCNzRtZU1heXJMNWxraURmSEE0S1V1UzBBd2Z6OUFqXzAxdGlzbzl4MHhlcVI5WjZoSjRPZmVzZVdXUVpzOUJyTzRsWWd5SDVOX2tEWjc2UmZRbFcwa2VQSFpwUzktYzZqRFZ0bXlzbmtmbWRmYXNnanByaHhaVlZjZUJEc3ZXZ3hGTXxev75eA4yUshRXqobFdTvayIWCKC5ph_oWecFWdSbdpQ==; _gid=GA1.2.1225736999.1730374960; _gat_gtag_UA_89019737_3=1; _ga_LMD5MFLF7Q=GS1.1.1730374960.32.1.1730375387.0.0.0; _ga=GA1.1.310246074.1694176221',
+    'priority': 'u=1, i',
+    'referer': 'https://labs.play-with-docker.com/p/cshmtki91nsg00e88kjg',
+    'sec-ch-ua': '"Chromium";v="130", "Google Chrome";v="130", "Not?A_Brand";v="99"',
     'sec-ch-ua-mobile': '?0',
     'sec-ch-ua-platform': '"Windows"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
+    'sec-fetch-dest': 'empty',
+    'sec-fetch-mode': 'cors',
     'sec-fetch-site': 'same-origin',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36',
+    'x-kl-kfa-ajax-request': 'Ajax_Request',
 }
 
 
