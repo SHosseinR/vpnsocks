@@ -30,6 +30,7 @@ do
     else
         if [ "$httppass" == "no-pass" ]
         then
+            scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./docker-compose-squid.yml  $host:/root/docker-compose.yml
             scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./squid-open.conf  $host:/root/squid.conf
         else
             scp  -o PubkeyAcceptedKeyTypes=ssh-rsa ./docker-compose-squid.yml  $host:/root/docker-compose.yml
