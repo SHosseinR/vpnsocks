@@ -1,24 +1,19 @@
 import requests
 
 cookies = {
-    '_biz_uid': 'dd0c124957654a52c0e6263f063f2edb',
-    'ajs_anonymous_id': '7f88c857-6dae-4b0f-a7a8-66651b8f9cb6',
-    'ajs_user_id': '284c4dbf-25ba-4bde-a082-d4fec241c581',
-    '_biz_nA': '87',
     '_ga_5219ZE0FPY': 'GS1.2.1702491049.19.0.1702491049.0.0.0',
-    '_biz_pendingA': '%5B%5D',
+    'id': 'MTczNzAyMjUwN3xXRUtzSEZCMHBzM3dKaE14WHZTNnhnRHhIMm9ncFZfMm9nR2cxeUNOZTJ5N3plcFAyMFRZcEpMUmlaRTBLdVhjU3ZoMTg1M3h1aTMtT05ObTJLOFdzNzd6b2JKYnRXUFplRlBfLWJOSkpVTXJHbkd2YnBjVTltbC1BVkpJNE85aEFOc2F2VXN2ckp0ejAtNnVWQ3NBaEo1WU9tbG1qUVZMWXdURVRPNG1EWXJVZU9XQVJ4blZVOF9RUkMtMU5zbklmeTlHNEVoc205V2R5ZWJPM1ZHWVhSamItOG03OWNTOFVtcTVQaFNQVmJheU5wT3ZXLXNmN0FKejJMOFBTa0hMSnp0OFdwNnlscFRQelVtTnybfuatDaX9znGlZJ2QpeJeznnK-dUYjpPNNcVQEm_Yqg==',
+    '_gid': 'GA1.2.1228628637.1737022549',
+    '_gat_gtag_UA_89019737_3': '1',
+    '_ga_LMD5MFLF7Q': 'GS1.1.1737022548.36.0.1737022548.0.0.0',
     '_ga': 'GA1.1.310246074.1694176221',
-    '_ga_LMD5MFLF7Q': 'GS1.1.1730454494.33.1.1730455150.0.0.0',
-    'id': 'MTczMzg0OTYzNHxFb1pjTi00aWh6TmM0WDFlQWhMR0d3LV9zRW5EY1EtNW44c2lHM3g3UTlINzFEWFl5TGNxZGZfUExWRjFpUHhPUkFJYUxOUEU1OUlUWXg0UTV1bTVibnJkN1QzMm9Ec1MzZlgwX3dQMUZEMjNFZ0ExdnlOeEVDQjRhTWFfeWZ5RVFaNU9tNERSTDA2SHZEY0h6Q1M0UUdrRWR5Zy1kZ3AySFlBcW8xVlQtMUdJZXBYTkpQREtMYUstMDJEemx3X2NHMjVOWDZpRldJUFpuX0Q4eFI4cE1CR3NWcVNjOVhKTnpDX3FBNkYxX0FfajRURk93cnZZbXptdFU5MGM2WWhWeFVLMDF4N0x2VlhvU0V1TXz_jGGM26cJPQTEBfF61rPLl1oOzf4Yx-PA2kUBDatP_Q==',
 }
 
 headers = {
     'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
     'accept-language': 'en-US,en;q=0.9,fa-IR;q=0.8,fa;q=0.7',
     'cache-control': 'max-age=0',
-    'content-type': 'application/x-www-form-urlencoded',
-    # 'cookie': '_biz_uid=dd0c124957654a52c0e6263f063f2edb; ajs_anonymous_id=7f88c857-6dae-4b0f-a7a8-66651b8f9cb6; ajs_user_id=284c4dbf-25ba-4bde-a082-d4fec241c581; _biz_nA=87; _ga_5219ZE0FPY=GS1.2.1702491049.19.0.1702491049.0.0.0; _biz_pendingA=%5B%5D; _ga=GA1.1.310246074.1694176221; _ga_LMD5MFLF7Q=GS1.1.1730454494.33.1.1730455150.0.0.0; id=MTczMzg0OTYzNHxFb1pjTi00aWh6TmM0WDFlQWhMR0d3LV9zRW5EY1EtNW44c2lHM3g3UTlINzFEWFl5TGNxZGZfUExWRjFpUHhPUkFJYUxOUEU1OUlUWXg0UTV1bTVibnJkN1QzMm9Ec1MzZlgwX3dQMUZEMjNFZ0ExdnlOeEVDQjRhTWFfeWZ5RVFaNU9tNERSTDA2SHZEY0h6Q1M0UUdrRWR5Zy1kZ3AySFlBcW8xVlQtMUdJZXBYTkpQREtMYUstMDJEemx3X2NHMjVOWDZpRldJUFpuX0Q4eFI4cE1CR3NWcVNjOVhKTnpDX3FBNkYxX0FfajRURk93cnZZbXptdFU5MGM2WWhWeFVLMDF4N0x2VlhvU0V1TXz_jGGM26cJPQTEBfF61rPLl1oOzf4Yx-PA2kUBDatP_Q==',
-    'origin': 'https://labs.play-with-docker.com',
+    # 'cookie': '_ga_5219ZE0FPY=GS1.2.1702491049.19.0.1702491049.0.0.0; id=MTczNzAyMjUwN3xXRUtzSEZCMHBzM3dKaE14WHZTNnhnRHhIMm9ncFZfMm9nR2cxeUNOZTJ5N3plcFAyMFRZcEpMUmlaRTBLdVhjU3ZoMTg1M3h1aTMtT05ObTJLOFdzNzd6b2JKYnRXUFplRlBfLWJOSkpVTXJHbkd2YnBjVTltbC1BVkpJNE85aEFOc2F2VXN2ckp0ejAtNnVWQ3NBaEo1WU9tbG1qUVZMWXdURVRPNG1EWXJVZU9XQVJ4blZVOF9RUkMtMU5zbklmeTlHNEVoc205V2R5ZWJPM1ZHWVhSamItOG03OWNTOFVtcTVQaFNQVmJheU5wT3ZXLXNmN0FKejJMOFBTa0hMSnp0OFdwNnlscFRQelVtTnybfuatDaX9znGlZJ2QpeJeznnK-dUYjpPNNcVQEm_Yqg==; _gid=GA1.2.1228628637.1737022549; _gat_gtag_UA_89019737_3=1; _ga_LMD5MFLF7Q=GS1.1.1737022548.36.0.1737022548.0.0.0; _ga=GA1.1.310246074.1694176221',
     'priority': 'u=0, i',
     'referer': 'https://labs.play-with-docker.com/',
     'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
@@ -31,7 +26,6 @@ headers = {
     'upgrade-insecure-requests': '1',
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
 }
-
 
 data = {
     'stack': '',
