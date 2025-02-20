@@ -1,30 +1,22 @@
 import requests
 
 cookies = {
-    '_ga_5219ZE0FPY': 'GS1.2.1702491049.19.0.1702491049.0.0.0',
-    'id': 'MTczNzAyMjUwN3xXRUtzSEZCMHBzM3dKaE14WHZTNnhnRHhIMm9ncFZfMm9nR2cxeUNOZTJ5N3plcFAyMFRZcEpMUmlaRTBLdVhjU3ZoMTg1M3h1aTMtT05ObTJLOFdzNzd6b2JKYnRXUFplRlBfLWJOSkpVTXJHbkd2YnBjVTltbC1BVkpJNE85aEFOc2F2VXN2ckp0ejAtNnVWQ3NBaEo1WU9tbG1qUVZMWXdURVRPNG1EWXJVZU9XQVJ4blZVOF9RUkMtMU5zbklmeTlHNEVoc205V2R5ZWJPM1ZHWVhSamItOG03OWNTOFVtcTVQaFNQVmJheU5wT3ZXLXNmN0FKejJMOFBTa0hMSnp0OFdwNnlscFRQelVtTnybfuatDaX9znGlZJ2QpeJeznnK-dUYjpPNNcVQEm_Yqg==',
-    '_gid': 'GA1.2.1228628637.1737022549',
-    '_gat_gtag_UA_89019737_3': '1',
-    '_ga_LMD5MFLF7Q': 'GS1.1.1737022548.36.0.1737022548.0.0.0',
-    '_ga': 'GA1.1.310246074.1694176221',
+    'id': 'MTc0MDA0NzQ0NnxLbDhoMkJHN2Q5Zm5WdXZfX1hWaEtqWlY3OGNVemN3a0FFUGVfUWNENUsyeENZY1JsNFVOZ2ZGUmdWQnlheFI2VERKa1VjbXZUVl9Va251QVJielltT0ZOYjJoUkhkMUFCRk1SM3pIYWQ0WnYyZWlmSDZZR1UtZUVPdmxzTTdIMENnRGp3SV9jbkJVVHN2c0RZLXV5Qzlpd2h6dTlwWWhCbG5WbWNPVmo1Z2J1Y3A1eW1faGlvNWcwX0N0aEJKNlRWeEhISThHb0hwb1JJSnhBak5DLTlmdHRXMnZrN0Q1OFF0X0NhZjR1eVFPN1JoSXowLVJ4WEtNQ3ZSQ2pLVG5HY2N5bUM1djQ5QUE5ZDlpQXyIM5zIl79gCituRXpmKUN5oN4Yj_1t_2Imar8jmvjwyQ==',
 }
 
 headers = {
-    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-    'accept-language': 'en-US,en;q=0.9,fa-IR;q=0.8,fa;q=0.7',
-    'cache-control': 'max-age=0',
-    # 'cookie': '_ga_5219ZE0FPY=GS1.2.1702491049.19.0.1702491049.0.0.0; id=MTczNzAyMjUwN3xXRUtzSEZCMHBzM3dKaE14WHZTNnhnRHhIMm9ncFZfMm9nR2cxeUNOZTJ5N3plcFAyMFRZcEpMUmlaRTBLdVhjU3ZoMTg1M3h1aTMtT05ObTJLOFdzNzd6b2JKYnRXUFplRlBfLWJOSkpVTXJHbkd2YnBjVTltbC1BVkpJNE85aEFOc2F2VXN2ckp0ejAtNnVWQ3NBaEo1WU9tbG1qUVZMWXdURVRPNG1EWXJVZU9XQVJ4blZVOF9RUkMtMU5zbklmeTlHNEVoc205V2R5ZWJPM1ZHWVhSamItOG03OWNTOFVtcTVQaFNQVmJheU5wT3ZXLXNmN0FKejJMOFBTa0hMSnp0OFdwNnlscFRQelVtTnybfuatDaX9znGlZJ2QpeJeznnK-dUYjpPNNcVQEm_Yqg==; _gid=GA1.2.1228628637.1737022549; _gat_gtag_UA_89019737_3=1; _ga_LMD5MFLF7Q=GS1.1.1737022548.36.0.1737022548.0.0.0; _ga=GA1.1.310246074.1694176221',
-    'priority': 'u=0, i',
-    'referer': 'https://labs.play-with-docker.com/',
-    'sec-ch-ua': '"Google Chrome";v="131", "Chromium";v="131", "Not_A Brand";v="24"',
-    'sec-ch-ua-mobile': '?0',
-    'sec-ch-ua-platform': '"Windows"',
-    'sec-fetch-dest': 'document',
-    'sec-fetch-mode': 'navigate',
-    'sec-fetch-site': 'same-origin',
-    'sec-fetch-user': '?1',
-    'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0',
+    'Accept': 'application/json, text/plain, */*',
+    'Accept-Language': 'en-US,en;q=0.5',
+    # 'Accept-Encoding': 'gzip, deflate, br, zstd',
+    'Connection': 'keep-alive',
+    'Referer': 'https://labs.play-with-docker.com/p/curg9eol2o9000fvt2ig',
+    # 'Cookie': 'id=MTc0MDA0NzQ0NnxLbDhoMkJHN2Q5Zm5WdXZfX1hWaEtqWlY3OGNVemN3a0FFUGVfUWNENUsyeENZY1JsNFVOZ2ZGUmdWQnlheFI2VERKa1VjbXZUVl9Va251QVJielltT0ZOYjJoUkhkMUFCRk1SM3pIYWQ0WnYyZWlmSDZZR1UtZUVPdmxzTTdIMENnRGp3SV9jbkJVVHN2c0RZLXV5Qzlpd2h6dTlwWWhCbG5WbWNPVmo1Z2J1Y3A1eW1faGlvNWcwX0N0aEJKNlRWeEhISThHb0hwb1JJSnhBak5DLTlmdHRXMnZrN0Q1OFF0X0NhZjR1eVFPN1JoSXowLVJ4WEtNQ3ZSQ2pLVG5HY2N5bUM1djQ5QUE5ZDlpQXyIM5zIl79gCituRXpmKUN5oN4Yj_1t_2Imar8jmvjwyQ==',
+    'Sec-Fetch-Dest': 'empty',
+    'Sec-Fetch-Mode': 'cors',
+    'Sec-Fetch-Site': 'same-origin',
+    # Requests doesn't support trailers
+    # 'TE': 'trailers',
 }
 
 data = {
