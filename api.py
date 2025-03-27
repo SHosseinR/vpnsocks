@@ -1,17 +1,17 @@
 import requests
 
 cookies = {
-    'id': 'MTc0MDA0NzQ0NnxLbDhoMkJHN2Q5Zm5WdXZfX1hWaEtqWlY3OGNVemN3a0FFUGVfUWNENUsyeENZY1JsNFVOZ2ZGUmdWQnlheFI2VERKa1VjbXZUVl9Va251QVJielltT0ZOYjJoUkhkMUFCRk1SM3pIYWQ0WnYyZWlmSDZZR1UtZUVPdmxzTTdIMENnRGp3SV9jbkJVVHN2c0RZLXV5Qzlpd2h6dTlwWWhCbG5WbWNPVmo1Z2J1Y3A1eW1faGlvNWcwX0N0aEJKNlRWeEhISThHb0hwb1JJSnhBak5DLTlmdHRXMnZrN0Q1OFF0X0NhZjR1eVFPN1JoSXowLVJ4WEtNQ3ZSQ2pLVG5HY2N5bUM1djQ5QUE5ZDlpQXyIM5zIl79gCituRXpmKUN5oN4Yj_1t_2Imar8jmvjwyQ==',
+    'id': 'MTc0MzA4MjUzNXxzTnZLZEhmR2Q5cUFPbEVWcHMxWnViQ0xydVR0QkNNS3ctNVp4aHJSNkVkYkFwdm1DRmlXMXlUWGVlWE10RExQb2Z6YU4xek1USC1GakhVRExPQngzbkxtc25XVEtvQ25nQVljWkJ3WXRYVnUtajUtVmxpbE13YVpTOVVaNmxnM3RWeHZvMGNJS2pValNtSS03TVpxUjYzSXROUS1NYi00QlNLSnNWWXNKaXBxUUNhTVRQR2pyT1AzUFozZVBQeVVPcXB2Q0ozblFKTUdQSFpJb0xfOERqN0lIWDJqWnJxWWV4V01tRTZlLTBGUnFMXy1jUGg1VWcyYjY4VDRFYWVkUktSRHl4U2xkYktqaWhySHyh5GnsRSVu8eVx0NucZSP8tJWizyixsvK0ZfXlbZtzUw==',
 }
 
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0',
     'Accept': 'application/json, text/plain, */*',
     'Accept-Language': 'en-US,en;q=0.5',
     # 'Accept-Encoding': 'gzip, deflate, br, zstd',
     'Connection': 'keep-alive',
-    'Referer': 'https://labs.play-with-docker.com/p/curg9eol2o9000fvt2ig',
-    # 'Cookie': 'id=MTc0MDA0NzQ0NnxLbDhoMkJHN2Q5Zm5WdXZfX1hWaEtqWlY3OGNVemN3a0FFUGVfUWNENUsyeENZY1JsNFVOZ2ZGUmdWQnlheFI2VERKa1VjbXZUVl9Va251QVJielltT0ZOYjJoUkhkMUFCRk1SM3pIYWQ0WnYyZWlmSDZZR1UtZUVPdmxzTTdIMENnRGp3SV9jbkJVVHN2c0RZLXV5Qzlpd2h6dTlwWWhCbG5WbWNPVmo1Z2J1Y3A1eW1faGlvNWcwX0N0aEJKNlRWeEhISThHb0hwb1JJSnhBak5DLTlmdHRXMnZrN0Q1OFF0X0NhZjR1eVFPN1JoSXowLVJ4WEtNQ3ZSQ2pLVG5HY2N5bUM1djQ5QUE5ZDlpQXyIM5zIl79gCituRXpmKUN5oN4Yj_1t_2Imar8jmvjwyQ==',
+    'Referer': 'https://labs.play-with-docker.com/p/cvil8aiim2rg0090hv7g',
+    # 'Cookie': 'id=MTc0MzA4MjUzNXxzTnZLZEhmR2Q5cUFPbEVWcHMxWnViQ0xydVR0QkNNS3ctNVp4aHJSNkVkYkFwdm1DRmlXMXlUWGVlWE10RExQb2Z6YU4xek1USC1GakhVRExPQngzbkxtc25XVEtvQ25nQVljWkJ3WXRYVnUtajUtVmxpbE13YVpTOVVaNmxnM3RWeHZvMGNJS2pValNtSS03TVpxUjYzSXROUS1NYi00QlNLSnNWWXNKaXBxUUNhTVRQR2pyT1AzUFozZVBQeVVPcXB2Q0ozblFKTUdQSFpJb0xfOERqN0lIWDJqWnJxWWV4V01tRTZlLTBGUnFMXy1jUGg1VWcyYjY4VDRFYWVkUktSRHl4U2xkYktqaWhySHyh5GnsRSVu8eVx0NucZSP8tJWizyixsvK0ZfXlbZtzUw==',
     'Sec-Fetch-Dest': 'empty',
     'Sec-Fetch-Mode': 'cors',
     'Sec-Fetch-Site': 'same-origin',
